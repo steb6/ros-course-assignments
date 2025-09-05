@@ -39,8 +39,6 @@ class TurtleController(Node):
         # To publish velocity commands
         self.__dict__['publishers']['turtle1'] = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.__dict__['publishers']['turtle2'] = self.create_publisher(Twist, '/turtle2/cmd_vel', 10)
-        # self.publishers['turtle1'] = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
-        # self.publishers['turtle2'] = self.create_publisher(Twist, '/turtle2/cmd_vel', 10)
         
         # Subscribers for turtle poses
         self.create_subscription(Pose, '/turtle1/pose', lambda msg: self.pose_callback('turtle1', msg), 10)
