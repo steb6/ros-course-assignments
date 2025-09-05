@@ -21,7 +21,6 @@ setup(
     entry_points={
         'console_scripts': [
             'turtle_controller = assignment1_rt.turtle_controller:main',
-            'turtle_info_listener = assignment1_rt.turtle_info_listener:main'
         ],
     },
 )
