@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'turtle_controller'
+package_name = 'assignment1_rt'
 
 setup(
     name=package_name,
@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'turtle_controller = turtle_controller.turtle_controller:main'
+            'turtle_controller = assignment1_rt.turtle_controller:main',
+            'turtle_info_listener = assignment1_rt.turtle_info_listener:main'
         ],
     },
 )
